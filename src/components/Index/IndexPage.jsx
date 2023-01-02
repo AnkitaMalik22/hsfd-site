@@ -75,7 +75,7 @@ const [loginPassword, setLoginPassword] = useState("");
 
     <div className="icons">
     <div className="fas fa-bars" id="menu-btn"  ></div>
-        {/* <div className="fas fa-bars" id="menu-btn" onClick={()=>{nav ? setNav(false) : setNav(true) && setLoginForm(false) && setSearchForm(false) && setToggle(true) }}></div> */}
+     <div className="fas fa-bars" id="menu-btn" onClick={()=>{nav ? setNav(false) : setNav(true) && setLoginForm(false) && setSearchForm(false) && setToggle(true) }}></div>
         <div className="fas fa-search" id="search-btn" onClick={()=>{ searchForm ? setSearchForm(false) : setSearchForm(true) && setLoginForm(false) && setNav(false) && setToggle(true) }}></div>
         {/* <div className="fas fa-user" id="login-btn" onClick={()=>{loginForm ? setLoginForm(false) : setLoginForm(true) && setSearchForm(false) && setNav(false) && setToggle(true)}}></div> */}
      
