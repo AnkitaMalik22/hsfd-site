@@ -3,7 +3,7 @@ import './style.css'
 // import { useDispatch } from "react-redux";
 // import { clearErrors, login, } from "../../actions/userActions.js";
 import Swiper from 'swiper';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate ,Link} from 'react-router-dom';
 import pic1 from './imgs/pic-1.png'
 import pic2 from './imgs/pic-2.png'
 import pic3 from './imgs/pic-3.png'
@@ -78,8 +78,12 @@ const [loginPassword, setLoginPassword] = useState("");
      <div className="fas fa-bars" id="menu-btn" onClick={()=>{nav ? setNav(false) : setNav(true) && setLoginForm(false) && setSearchForm(false) && setToggle(true) }}></div>
         <div className="fas fa-search" id="search-btn" onClick={()=>{ searchForm ? setSearchForm(false) : setSearchForm(true) && setLoginForm(false) && setNav(false) && setToggle(true) }}></div>
         {/* <div className="fas fa-user" id="login-btn" onClick={()=>{loginForm ? setLoginForm(false) : setLoginForm(true) && setSearchForm(false) && setNav(false) && setToggle(true)}}></div> */}
-     
-        <div className="fas fa-user" id="login-btn" onClick={()=>navigate("/login")} ></div>
+
+    <Link to="https://hsfd.onrender.com/login">
+      <div className="fas fa-user" id="login-btn" ></div>
+     </Link>
+
+       
     </div>
 
     <form action="" className={`${searchForm ? 'active' : "" } search-form`}>
@@ -114,7 +118,8 @@ const [loginPassword, setLoginPassword] = useState("");
     <div className="content">
         <h3>Hotel <span> Surplus </span> Food Distribution </h3>
         <p>Donate surplus food to reduce waste and fight hunger, or to distribute food to those in need</p>
-        <a href="/login" className="btn">register now</a>
+            <Link to="https://hsfd.onrender.com/login"> <a className="btn">register now</a></Link>
+       
     </div>
 
 </section>
