@@ -79,7 +79,7 @@ const [loginPassword, setLoginPassword] = useState("");
         <div className="fas fa-search" id="search-btn" onClick={()=>{ searchForm ? setSearchForm(false) : setSearchForm(true) && setLoginForm(false) && setNav(false) && setToggle(true) }}></div>
         {/* <div className="fas fa-user" id="login-btn" onClick={()=>{loginForm ? setLoginForm(false) : setLoginForm(true) && setSearchForm(false) && setNav(false) && setToggle(true)}}></div> */}
      
-        <div className="fas fa-user" id="login-btn" href="https://hsfd.onrender.com/login" ></div>
+        <div className="fas fa-user" id="login-btn" ></div>
     </div>
 
     <form action="" className={`${searchForm ? 'active' : "" } search-form`}>
