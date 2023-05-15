@@ -27,6 +27,9 @@ const [toggle,setToggle]=useState(false)
 const [loginEmail, setLoginEmail] = useState("");
 const [loginPassword, setLoginPassword] = useState("");
 
+const [searchQuery, setSearchQuery] = useState("");
+
+
 // const loginSubmit = (e) => {
 //     e.preventDefault();
 //     dispatch(login(loginEmail, loginPassword));
@@ -56,6 +59,12 @@ const [loginPassword, setLoginPassword] = useState("");
     });
     
   }, []);
+
+
+  
+
+
+  
 
   return (
     <React.Fragment>
@@ -87,7 +96,11 @@ const [loginPassword, setLoginPassword] = useState("");
     </div>
 
     <form action="" className={`${searchForm ? 'active' : "" } search-form`}>
-        <input type="search" id="search-box" placeholder="search here..."/>
+        <input  type="search"
+  id="search-box"
+  placeholder="search here..."
+  value={searchQuery}
+  onChange={(e) => setSearchQuery(e.target.value)}/>
         <label htmlFor="search-box" className="fas fa-search"></label>
     </form>
 
@@ -399,7 +412,7 @@ const [loginPassword, setLoginPassword] = useState("");
 
     </div>
 
-    <div className="credit"> created by | <span>Ankita | Sanjana | Adarsha | Raju | Khadija</span> | @2022 </div>
+    <div className="credit"> created by | <span>Ankita | Sanjana | Adarsha | Raju | Khadija</span> | @2023 </div>
 
 </section>
 
