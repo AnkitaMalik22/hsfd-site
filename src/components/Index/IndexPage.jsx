@@ -79,9 +79,9 @@ const [loginPassword, setLoginPassword] = useState("");
         <div className="fas fa-search" id="search-btn" onClick={()=>{ searchForm ? setSearchForm(false) : setSearchForm(true) && setLoginForm(false) && setNav(false) && setToggle(true) }}></div>
         {/* <div className="fas fa-user" id="login-btn" onClick={()=>{loginForm ? setLoginForm(false) : setLoginForm(true) && setSearchForm(false) && setNav(false) && setToggle(true)}}></div> */}
 
-    <Link to="https://hsfd.onrender.com/login">
-      <div className="fas fa-user" id="login-btn" ></div>
-     </Link>
+    {/* <Link to="https://hsfd.onrender.com/login"> */}
+      <div className="fas fa-user" id="login-btn" onClick={()=>{window.location.replace("https://hsfd.onrender.com/login")}} ></div>
+     {/* </Link> */}
 
        
     </div>
@@ -118,7 +118,7 @@ const [loginPassword, setLoginPassword] = useState("");
     <div className="content">
         <h3>Hotel <span> Surplus </span> Food Distribution </h3>
         <p>Donate surplus food to reduce waste and fight hunger, or to distribute food to those in need</p>
-            <Link to="https://hsfd.onrender.com/login"> <a className="btn">register now</a></Link>
+           <a className="btn" onClick={()=>{window.location.replace("https://hsfd.onrender.com/login")}}>register now</a>
        
     </div>
 
